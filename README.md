@@ -21,9 +21,11 @@ Number of trades: 21 Win rate: 81% PnL (%): -3.34%
 ![Graph](graph.png)
 The trans_date is the date time when the algorithm exits the position for both pairs. As observed, due to the absence of stop-loss, the losses in row 9, 10, 12 is huge.
 ![table data](trans_data.png)
+
 Pros
 - Assumes that correlation changes (pairs selection and model is always up-to-date)
 - Simple model, doesn’t require much computation
+
 Cons
 - No stop-loss (correlation may continue drifting and not revert back to the mean)
 - Too many parameters to tune, and difficult to backtest
@@ -33,4 +35,4 @@ Cons
 ## Improvements
 - Set stop-loss if correlation drifts too much (using standard deviation value)
 - Use weighted linear regression based on time
-- Implement backtest (extract forex data when the correlation is 0.95, and execute the strategy on those data) and do hyperparameter tuning for linear regression data duration (i.e. 1 week data) and pairs selection dara duration (i.e. 1 month data)
+- Implement backtest (extract forex data when the correlation is 0.95, and execute the strategy on those data) and do hyperparameter tuning for linear regression data duration (i.e. 1 week data) and pairs selection data duration (i.e. 1 month data)
