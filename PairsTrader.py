@@ -15,8 +15,8 @@ import oandapyV20.endpoints.trades as trades
 # Configs
 # INSTRUMENT_PAIR = ['USD_CAD', 'USD_JPY']
 INSTRUMENT_PAIR = ['EUR_JPY', 'GBP_JPY']
-ACCESS_TOKEN = '46bb4716cb283b1edcc7b9cb4acd8e1f-f4b2c2eb1d4d47f653b1682fbb419315'
-ACCOUNT_ID = '101-003-26638180-007'
+ACCESS_TOKEN = 'access_token'
+ACCOUNT_ID = 'account_id'
 # Granularity of the data to use and train the model
 GRANULARITY = 'M1'
 # Amount to trade (currency determined by the account's currenacy)
